@@ -41,6 +41,9 @@ $copyright = get_theme_mod( 'footer_copyright_text', 'Copyright 2014 <a href="ht
 				'sort_column'		=> 'menu_order',
 				'fallback_cb'		=> false,
 			) ); ?>
+            
+            <?php  get_template_part( 'partials/topbar/topbar', 'social' ); ?>
+            
 		</div><!-- #footer-bottom-menu -->
 	</div><!-- #footer-bottom-inner -->
 </div><!-- #footer-bottom -->

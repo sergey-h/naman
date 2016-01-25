@@ -398,3 +398,9 @@ if ( get_theme_mod( 'envato_license_key' ) ) {
 	require_once( get_template_directory() .'/wp-updates-theme.php');
 	new WPUpdatesThemeUpdater_479( 'http://wp-updates.com/api/2/theme', basename( get_template_directory() ), get_theme_mod( 'envato_license_key' ) );
 }
+
+
+add_filter('add_to_cart_redirect', 'custom_add_to_cart_redirect');
+function custom_add_to_cart_redirect() {
+return get_permalink(get_option('woocommerce_checkout_page_id')); // Replace with the url of your choosing
+}

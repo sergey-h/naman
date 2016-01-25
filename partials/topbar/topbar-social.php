@@ -74,6 +74,7 @@ if ( ! empty ( $social_options ) ) :
 	<div id="top-bar-social" class="clr <?php echo $classes; ?> social-style-<?php echo $style; ?>">
 		<?php
 		// Loop through social options
+				
 		foreach ( $social_options as $key => $val ) : ?>
 			<?php
 			// Get URL from the theme mods

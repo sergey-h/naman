@@ -133,10 +133,6 @@ if ( ! function_exists( 'wpex_css_animations_array' ) ) {
 if ( ! function_exists( 'wpex_topbar_social_options' ) ) {
 	function wpex_topbar_social_options() {
 		$social_options = array(
-			'twitter'		=> array(
-				'label' 		=> __( 'Twitter', 'wpex' ),
-				'icon_class'	=> 'fa fa-twitter',
-			),
 			'facebook'		=> array(
 				'label' 		=> __( 'Facebook', 'wpex' ),
 				'icon_class'	=> 'fa fa-facebook',
@@ -144,6 +140,10 @@ if ( ! function_exists( 'wpex_topbar_social_options' ) ) {
 			'googleplus'	=> array(
 				'label' 		=> __( 'Google Plus', 'wpex' ),
 				'icon_class'	=> 'fa fa-google-plus',
+			),
+			'twitter'		=> array(
+				'label' 		=> __( 'Twitter', 'wpex' ),
+				'icon_class'	=> 'fa fa-twitter',
 			),
 			'pinterest'		=> array(
 				'label' 		=> __( 'Pinterest', 'wpex' ),

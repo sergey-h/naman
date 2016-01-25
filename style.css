@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
  Theme Name: Total
- Version: 1.6.2
+ Version: 99
  Description: Premium WordPress theme by WPExplorer
  Author: WPExplorer
  Theme URI: http://www.wpexplorer.com
@@ -723,6 +723,20 @@ body #site-navigation .sf-menu li.left-dropdowns ul a.sf-with-ul { padding-left:
 #site-header-inner { position: relative; padding-top: 30px; padding-bottom: 30px; }
 #site-navigation.container { position: relative; }
 
+#site-header-inner {
+    padding-bottom: 30px;
+    padding-top: 5px;
+    position: relative;
+}
+
+/* Temp Changes */
+#site-header-inner {
+    padding-bottom: 12px;
+    padding-top: 5px;
+    position: relative;
+}
+/* Emd */
+
 /*site logo*/
 #site-logo a { padding: 0px; margin: 0px; text-decoration: none; color: #222; font-size: 24px; margin: 0; line-height: 1.35em; font-weight: bold; }
 #site-logo a .fa { margin-right: 10px; }
@@ -849,6 +863,24 @@ body.admin-bar .is-sticky #site-header { padding-top: 32px }
 .header-three-logo { float: none; text-align: center; }
 .header-three-logo a { display: inline; display: inline-block; float: none; }
 .header-three-logo img { display: inline; display: inline-block; }
+
+
+.header-three-logo {
+    float: left;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+/* Temp Changes */
+
+.header-three-logo {
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Emd */
 
 /*header three navigation*/
 .navbar-style-three { border-top: 1px solid #e4e4e4; position: relative; }
@@ -2093,4 +2125,247 @@ span.required { color: #F00; font-size: 9px; position: relative; top: -4px; }
 	.container { width: 100%; padding: 0; }
 	.wpb_accordion_content,
 	.wpb_toggle_content { display: block !important }
+}
+
+
+
+/* Added on 22-11-2014 */
+
+.header-three-logo a {
+    display: inline-block;
+    float: left;
+}
+
+#top-bar-wrap {
+    border-bottom: none;
+    font-size: 0.923em;
+    margin-bottom: 0;
+}
+
+/*#top-bar {
+    float: right;
+    width: 25%;
+}
+.top-bar-left {
+    float: left;
+    height: 0px;
+    line-height: 50px;
+}
+.top-bar-right {
+    float: right;
+    height: 50px;
+    line-height: 0;
+}
+#top-bar-content {
+	 float: right !important;
+}*/
+
+
+#top-bar {
+    float: right;
+	font-size: 14px;
+}
+
+#top-bar-social {
+    float: right !important;
+}
+
+.navbar-style-three .dropdown-menu > li > a {
+    font-size: 15px;
+}
+.sf-menu a {
+    text-transform: uppercase;
+}
+
+.welcome-content .welcome-left-image{
+    width: 33.3333% !important;
+}
+
+.welcome-content .welcome-right-content{
+   width: 66.6667% !important;
+}
+
+.custome-tab a {
+    /*color: #159D3F !important;*/
+    font-size: 14px;
+}
+
+.wpb_tour.tab-style-default .wpb_tabs_nav li.ui-tabs-active a {
+    font-weight: bold !important;
+}
+
+.custome-gallery .vcex-filter-links a:hover,.custome-gallery .vcex-filter-links li.active a {
+    color: #2EAC59 !important;
+}
+
+
+.custome-gallery .vcex-filter-links a {
+    color: #d193aa !important;
+}
+
+.custome-testimonials .vcex-testimonials-fullslider-author {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+/*@media only screen and (min-width: 960px) {
+	.footer-reveal { position: relative; z-index: 1; position: fixed; bottom: 0; left: 0; width: 100%; }
+	.boxed-main-layout .footer-reveal { position: absolute }
+	.footer-has-reveal #main { position: relative; z-index: 2; background: #fff; }
+}
+*/
+@media only screen and (max-width: 959px) { 
+	#top-bar-wrap { display:none;}
+}
+
+.top-bar-right {
+    float: right;
+    height: 84px;
+    line-height: 50px;
+}
+
+/* Temp Changes */
+.top-bar-right {
+    float: right;
+    height: 54px;
+    line-height: 50px;
+}
+/* Emd */ 
+
+.top-bar-left {
+    float: left;
+    height: 12px;
+    line-height: 50px;
+}
+
+.footer-widget .widget-title {
+    color: #ed3692;
+    font-size: 1.077em;
+    font-weight: 600;
+    margin: 0 0 20px;
+} 
+
+.fa.fa-facebook {
+    font-size: 23px;
+}
+
+.fa.fa-google-plus {
+    font-size: 23px;
+}
+
+.fa.fa-twitter {
+	font-size: 23px;
+}
+
+.fa.fa-rss {
+	font-size: 23px;
+}
+
+.wpcf7-select {
+    background: none repeat scroll 0 0 #f7f7f7;
+    border: 1px solid #e4e4e4;
+    color: #777;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1em;
+    max-width: 100%;
+    padding: 10px 12px;
+    transition: border 0.15s linear 0s;
+}
+
+
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('fonts/cac_champagne-webfont.eot');
+    src: url('fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cac_champagne-webfont.woff2') format('woff2'),
+         url('fonts/cac_champagne-webfont.woff') format('woff'),
+         url('fonts/cac_champagne-webfont.ttf') format('truetype'),
+         url('fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.tp-caption.custome-largewhitetxt {
+	font-family: "cac_champagneregular" !important;
+}
+
+/*.wpb_tour  .ui-widget-content {
+    background:none !important;
+    border:none !important;
+    color: #222;
+}
+
+.wpb_tour .ui-widget-header {
+    background: none !important;
+    border: none !important;
+    color: #222;
+    font-weight: bold;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: none !important;
+    border: none !important;
+    color: #212121;
+    font-weight: normal;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: none !important;
+    border: none !important;
+    color: #555;
+    font-weight: normal;
+}
+
+.wpb_tour.tab-style-default .wpb_tabs_nav li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #e4e4e4 !important;
+    margin: 0;
+} */
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 482px) {
+.main-logo{
+    width: 77%;
+}
+.vc_text_separator {
+    font-size: 40px !important;
+}
+}
+
+#wedding-date {
+    background: none repeat scroll 0 0 #f7f7f7;
+    border: 1px solid #e4e4e4;
+    color: #777;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1em;
+    max-width: 100%;
+    padding: 10px 12px;
+    transition: border 0.15s linear 0s;
+}
+
+.sidebar-box {
+    border: 1px solid #ebebeb;
+    margin: 0 0 20px;
+    overflow: hidden;
+    padding: 0 20px 10px;
+}
+
+.sidebar-box .widget-title {
+    background: url("http://cosmeagardens.com/weddings-blog/wp-content/uploads/2015/02/catnav-bg.png") repeat-x scroll left bottom #fff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    margin: 0 -20px 12px;
+    padding: 5px 9px;
+}
+
+#sidebar {
+    margin-bottom: 10px;
+}
+.sidebar-box {
+    padding-bottom: 30px;
 }

@@ -102,8 +102,18 @@ if ( ! function_exists( 'wpex_social_share' ) ) {
 			// Loop through each social sharing site that is enabled
 			foreach ( $sharing_sites as $site ) {
 				// Twitter
-				if ( 'facebook' == $site ) { ?>
-					
+				if ( 'twitter' == $site ) { ?>
+					<li class="share-twitter">
+						<a href="http://twitter.com/share?text=<?php echo $title; ?>&amp;url=<?php echo $url; ?>" target="_blank" title="<?php _e( 'Share on Twitter', 'wpex' ); ?>" rel="nofollow" class="<?php echo $tooltip_class; ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+							<span class="fa fa-twitter"></span>
+							<?php if ( $position == 'horizontal' ) { ?>
+								<span class="social-share-button-text"><?php _e('Tweet','wpex'); ?></span>
+							<?php } ?>
+						</a>
+					</li>
+				<?php }
+				// Facebook
+				elseif ( 'facebook' == $site ) { ?>
 					<li class="share-facebook">
 						<a href="http://www.facebook.com/share.php?u=<?php echo $url; ?>" target="_blank" title="<?php _e( 'Share on Facebook', 'wpex' ); ?>" rel="nofollow" class="<?php echo $tooltip_class; ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
 							<span class="fa fa-facebook"></span>
@@ -111,29 +121,15 @@ if ( ! function_exists( 'wpex_social_share' ) ) {
 								<span class="social-share-button-text"><?php _e('Like','wpex'); ?></span>
 							<?php } ?>
 						</a>
-					</li>	
-				
+					</li>
 				<?php }
-				// Facebook
+				// Google+
 				elseif ( 'google_plus' == $site ) { ?>
-					
 					<li class="share-googleplus">
 						<a title="<?php _e( 'Share on Google+', 'wpex' ); ?>" rel="external" href="https://plus.google.com/share?url=<?php echo $url; ?>" class="<?php echo $tooltip_class; ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
 							<span class="fa fa-google-plus"></span>
 							<?php if ( $position == 'horizontal' ) { ?>
 								<span class="social-share-button-text"><?php _e('Plus one','wpex'); ?></span>
-							<?php } ?>
-						</a>
-					</li>
-				<?php }
-				// Google+
-				elseif ( 'twitter' == $site ) { ?>
-					
-					<li class="share-twitter">
-						<a href="http://twitter.com/share?text=<?php echo $title; ?>&amp;url=<?php echo $url; ?>" target="_blank" title="<?php _e( 'Share on Twitter', 'wpex' ); ?>" rel="nofollow" class="<?php echo $tooltip_class; ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-							<span class="fa fa-twitter"></span>
-							<?php if ( $position == 'horizontal' ) { ?>
-								<span class="social-share-button-text"><?php _e('Tweet','wpex'); ?></span>
 							<?php } ?>
 						</a>
 					</li>
